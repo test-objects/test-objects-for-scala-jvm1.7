@@ -1,10 +1,10 @@
-![build status](https://travis-ci.org/test-objects/test-objects-for-scala.svg?branch=master)
+![build status](https://travis-ci.org/test-objects/test-objects-for-scala-jvm1.7.svg?branch=master)
 
 # Usage
 see [Getting Started](docs/GettingStarted.md)
 
 # Installation
-see [Bintray](https://bintray.com/test-objects/maven/test-objects-for-scala) for latest version
+see [Bintray](https://bintray.com/test-objects/maven/test-objects-for-scala-jvm1.7) for latest version
 
 all versions are distributed to [jcenter](https://bintray.com/bintray/jcenter)
 
@@ -15,7 +15,7 @@ we support scala >= 2.10 on JVM >= 1.7
 ```SCALA
 // build.sbt
 // by default sbt resolves artifacts from jcenter so this one liner is all that's needed : ) 
-libraryDependencies += "org.testobjects" %% "test-objects-for-scala-jvm1.7" % testObjectsForScalaJvm1_7Version
+libraryDependencies += "org.testobjects" %% "test-objects-for-scala-jvm1-7" % testObjectsForScalaJvm1_7Version
 
 ```
 
