@@ -8,7 +8,7 @@ see [Bintray](https://bintray.com/test-objects/maven/test-objects-for-scala) for
 
 all versions are distributed to [jcenter](https://bintray.com/bintray/jcenter)
 
-we support scala >= 2.10 on JVM 1.7
+we support scala >= 2.10 on JVM >= 1.7
 
 ## SBT
 

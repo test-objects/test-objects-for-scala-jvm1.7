@@ -1,14 +1,14 @@
 
-name := "test-objects-for-scala"
+name := "test-objects-for-scala-jvm1.7"
 
 organization := "org.testobjects"
 
-homepage := Some(new URL("https://github.com/test-objects/test-objects-for-scala"))
+homepage := Some(new URL("https://github.com/test-objects/test-objects-for-scala-jvm1.7"))
 
 scmInfo := Some(
   ScmInfo(
-    new URL("https://github.com/test-objects/test-objects-for-scala"),
-    "scm:git:git@github.com:test-objects/test-objects-for-scala.git"
+    new URL("https://github.com/test-objects/test-objects-for-scala-jvm1.7"),
+    "scm:git:git@github.com:test-objects/test-objects-for-scala-jvm1.7.git"
   )
 )
 
@@ -24,7 +24,7 @@ crossScalaVersions := Seq(
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.5" % "test"
 
-publishTo := Some("Bintray API Realm" at "https://api.bintray.com/maven/test-objects/maven/test-objects-for-scala/;publish=1")
+publishTo := Some("Bintray API Realm" at "https://api.bintray.com/maven/test-objects/maven/test-objects-for-scala-jvm1.7/;publish=1")
 
 publishMavenStyle := true
 
