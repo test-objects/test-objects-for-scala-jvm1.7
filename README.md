@@ -4,11 +4,15 @@
 see [Getting Started](docs/GettingStarted.md)
 
 # Installation
+
+prerequisites:
+
+- scala >= 2.10 
+- JVM >= 1.7 (use [test-objects-for-scala](https://github.com/test-objects/test-objects-for-scala) if you DONT explicitly need JVM 1.7 support)
+
 see [Bintray](https://bintray.com/test-objects/maven/test-objects-for-scala-jvm1.7) for latest version
 
 all versions are distributed to [jcenter](https://bintray.com/bintray/jcenter)
-
-we support scala >= 2.10 on JVM >= 1.7
 
 ## SBT
 
