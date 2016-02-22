@@ -1,0 +1,19 @@
+language: generic
+sudo: required
+before_script:
+- sudo apt-get remove --purge docker-engine
+- curl -fsSL https://get.docker.com/ | sh
+- sudo rm /usr/local/bin/docker-compose
+- curl -L https://github.com/docker/compose/releases/download/1.6.0/docker-compose-`uname
+  -s`-`uname -m` > docker-compose
+- chmod +x docker-compose
+- sudo mv docker-compose /usr/local/bin
+- docker run -v $(pwd):/o devopspec/cli-installer
+services:
+- docker
+script:
+- ./dev-op-spec pipelines run release
+env:
+  global:
+  - secure: fGQKsR3RkGAi/U+RoILeezlQyLfNK7HYEaJmQbw37JtbhQ7QCroKyWjRfcmr8aZXuR/7Ol6vinkam+Vwg4qlfdbh8PYmakiX3K2SztDw7dURfb/GKqiY/XUkFxMyfP8hmuAghbLX4tRz9xaUR6loHwF29L6Oya5Ecv4e+VZ1AHo6+eysxOtJHlFOhP7SPKELA0yigGgsMwqWz82iKp4AVeTSrg9pUi8TIicOorQM+Rhf85JZhUmEwBBiHYL2tIb2uUMrTNXjmI/S7MgJxY1ij7gMnoAKTZHJngQFhiXjv9NOdVP6iknXF+GNh15hbWwrJE969GGMe32J9xSYo66mBGb2cm/SsRFyTKxnMaH4Wd4K9mYk/fhwOrCVt4WTCHHN9XdPodjK6mTq97C7+9+egkvpZ+DMRUvIeGMabR5leL5wxOvUzs9uDbn4ohvWWaROEyid8G2D1BRA0hPZQcKHkkD5/eqYLJTfM8Xro+EkRobquPEjzADmRs08GUWkYAhCBWxSJkCjaonGBhCb/eBpqUGer93qj0tl/qwraYJ2nuFDx/2s22af1fBDh0i6fF2zIFGCj54ru1HVxEakvU/Rl9rZklnQCMYm4bpux7DUf3U35KJQP+NQyr0c5AuhL6pcPwS8rl2AJzaAl7n9hny14IUppf3fJVL1OT2yETJbQqk=
+  - secure: Qgkgz8GrGowMbpr2ZSleLlC+j9c57R5YGBml4c7gaGqvMlIm4zquafpufGEaOo/qyB4RsQ4f9VX+6thHEIWXO0mRDmckcD4yQ5e0HSZqun3bCvAuVQsDQ6uxhinUXz71JeCT+kaCI79OtPVGP9yFpRj6kluabMg7I1sfzXb5hl9wdPIR9mBsmuzR7hGHX1zPdSC8N3WspF38yihJPLkbl3qY9OFWyazXaGDyUOxVtgvKv/+tTtZ4Fr8Zmz9XfUHpfHrhMFs+xBy7fp6DvYfi3T4oOnGfzVYoZRcMLDr+bmW6vUt4S/Iuxcget2RQGY3i79JKge+wO8eoKyz/WCYPnd7Yk0KH5tsqKnV3LqMBdeBAxU9AzN+o6vfnbtHTI8Zbp4KHIeYPuddfYecqK3pV4m6sn3cMlVwkAb9/kVvy5BVPNhvNAoy4dPdXkBhRkssdjyf2onhzJZ65R/FtadFve50Z+eAkUzWM2S35aPQl/ZQTcxZAjkyK3zTQmkJOOqjGIy+OxLH7AMsRz2yDQgU3lJXlPc2/htFKRSJSZ7k/ubxf+H+QDORx1hwhFH7QCkYYS9RSzJzSXb995VK9mWwufSwOSyAqcwGPkJswKPtMZIY/Crg4RDydldW+BJVqXYU5gxkuccImQ+O6+v6758zlQ0F6h6o5kzc+WDzvS8o4sJ0=

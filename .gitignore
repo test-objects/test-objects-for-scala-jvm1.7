@@ -1,0 +1,9 @@
+### JetBrains
+*.iml
+.idea/
+
+### SBT
+target/
+
+### dev-op-spec CLI
+dev-op-spec
