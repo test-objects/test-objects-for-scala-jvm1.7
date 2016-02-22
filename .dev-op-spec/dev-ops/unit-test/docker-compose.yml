@@ -4,4 +4,4 @@ services:
     extends:
       file: ../.common/docker-compose.yml
       service: sbt
-    entrypoint: sbt clean test
+    entrypoint: sbt clean +test
