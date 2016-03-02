@@ -12,7 +12,16 @@ scmInfo := Some(
   )
 )
 
-version := "0.1.0"
+developers := List(
+  new Developer(
+    "chrisdostert",
+    "Chris Dostert",
+    "chris.dostert@live.com",
+    new URL("https://github.com/chrisdostert")
+  )
+)
+
+version := "0.2.0"
 
 licenses +=("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0"))
 
