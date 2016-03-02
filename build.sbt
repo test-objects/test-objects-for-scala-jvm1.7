@@ -31,6 +31,8 @@ crossScalaVersions := Seq(
   "2.11.7"
 )
 
+pomIncludeRepository := { _ => false }
+
 libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.5" % "test"
 
 publishTo := Some("Bintray API Realm" at "https://api.bintray.com/maven/test-objects/maven/test-objects-for-scala-jvm1.7/;publish=1")
